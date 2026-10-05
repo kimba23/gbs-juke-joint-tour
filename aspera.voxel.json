@@ -1,0 +1,38 @@
+{
+  "version": "1.1",
+  "asset": {
+    "generator": "splat-transform v3.6.6",
+    "postprocess": "localized C/E false-obstacle carve v4"
+  },
+  "gridBounds": {
+    "min": [
+      -6.4799999999999995,
+      -2.16,
+      -5.28
+    ],
+    "max": [
+      10.8,
+      2.16,
+      5.2799999999999985
+    ]
+  },
+  "sceneBounds": {
+    "min": [
+      -7.522752101342083,
+      -4.738074841539,
+      -7.532015732084307
+    ],
+    "max": [
+      12.010036868754925,
+      3.1942042774391592,
+      6.645063167656774
+    ]
+  },
+  "voxelResolution": 0.06,
+  "leafSize": 4,
+  "treeDepth": 7,
+  "numInteriorNodes": 2879,
+  "numMixedLeaves": 6842,
+  "nodeCount": 17660,
+  "leafDataCount": 13684
+}
