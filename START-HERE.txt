@@ -1,0 +1,62 @@
+GB'S JUKE JOINT — WEBSITE HANDOFF
+=================================
+
+Live walk-through:
+https://kimba23.github.io/gbs-juke-joint-tour/
+
+This ZIP is a complete, ready-to-host website. It does not require the original
+PLY scan, LichtFeld, SuperSplat, a database, or a build step. The tour starts in
+walk mode after loading. To start over, reload the page.
+
+OPTION 1 — EMBED THE LIVE VERSION (EASIEST)
+
+Add this to a page on the studio's existing website. The files stay hosted on
+GitHub Pages, so there is nothing to upload to your own server:
+
+<iframe
+  src="https://kimba23.github.io/gbs-juke-joint-tour/"
+  title="Walk through GB's Juke Joint"
+  loading="lazy"
+  allow="fullscreen"
+  style="display:block;width:100%;height:80vh;min-height:520px;border:0"
+></iframe>
+
+If your website builder has an Embed, Custom HTML, or Code block, paste the
+iframe there. On mobile, give the embed enough height for the joystick and view.
+
+OPTION 2 — HOST THE FILES ON YOUR OWN WEBSITE
+
+1. Extract this ZIP. Do not upload the ZIP itself as a single file.
+2. Upload index.html, the assets folder, aspera.sog, aspera.voxel.json,
+   aspera.voxel.bin, and gbs-juke-joint-logo.webp together into one HTTPS
+   website folder, for example /juke-joint/. Keep names and folder layout.
+   START-HERE.txt and README.md are instructions; they are not needed online.
+3. Open https://YOUR-DOMAIN/juke-joint/ and wait for the opening logo to finish.
+   Check that you can walk through the doorway by the small dark floor remnant.
+4. To embed this self-hosted version, use the iframe above but replace its src
+   with https://YOUR-DOMAIN/juke-joint/.
+
+The host must serve the .sog and .bin as downloadable binary files, the .json
+as JSON, and the .js/.css/.webp/.html normally. It must not replace missing
+asset requests with an HTML error page. Opening index.html directly from a
+computer's file system is not a valid test; it needs a web server.
+
+CONTROLS AND TESTING
+
+Desktop: WASD or arrow keys to move; drag the view to look around.
+Phone/tablet: left on-screen joystick to move; drag the room to look around.
+Reload the page to return to the starting spot. There are no checkpoint or
+note-making controls in this client version.
+
+The scene file is about 95 MB. Please test on the actual phone and connection
+your visitors will use; the first load may take time. The live tour and its
+scan are public, so a visitor can download the files if they know the URL.
+
+PACKAGE CONTENTS
+
+index.html                 Website entry page
+assets/                    Viewer code and styles
+aspera.sog                 Compressed visual studio scan
+aspera.voxel.json/.bin     Walk collision data
+gbs-juke-joint-logo.webp   Studio logo
+START-HERE.txt, README.md  These instructions
